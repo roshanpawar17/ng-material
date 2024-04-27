@@ -1,0 +1,12 @@
+.ng-material{
+    &-footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+:host ::ng-deep .mat-toolbar{
+    background: rgba(0, 0, 0, 0.87);
+    color: white;
+}

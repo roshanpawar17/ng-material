@@ -1,0 +1,41 @@
+.ng-material{
+    &-components{
+        h2{
+            margin: 0;
+            padding: 10px;
+        }
+
+        &-container{
+            display: flex;
+            justify-content: flex-start;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            scrollbar-width: none;
+            overflow-y: scroll;
+            height: 68vh;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+
+            p{
+                cursor: pointer;
+            }
+        }
+    }
+    
+    &-card {
+        width: 32%;
+        height: 34%;
+    }
+
+}
+
+:host ::ng-deep .mat-mdc-card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    font-weight: bold;
+    font-size: 18px;
+}
