@@ -1,0 +1,13 @@
+.ng-material{
+    &-components{
+        &-container{
+            scrollbar-width: none;
+            overflow-y: scroll;
+            height: calc(100vh - 18vh);
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+
+}
