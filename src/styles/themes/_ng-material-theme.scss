@@ -1,0 +1,38 @@
+@use "@angular/material" as mat;
+@include mat.core();
+
+@import "./ng-material-light-theme";
+@import "./ng-material-dark-theme";
+@import "./component-theme.scss";
+
+// ****************************** If Define only one theme  ***************************************
+
+// //define palette
+// $ng-material-primary: mat.define-palette(mat.$blue-palette);
+// $ng-material-accent: mat.define-palette(mat.$deep-purple-palette);
+// $ng-material-warn: mat.define-palette(mat.$red-palette);
+
+//define theme
+// $ng-material-theme: mat.define-light-theme((
+//     color: (
+//         primary: $ng-material-primary,
+//         accent: $ng-material-accent,
+//         warn: $ng-material-warn
+//     )
+// ));
+
+// @include mat.all-component-themes($ng-material-theme);
+
+
+// ****************************** If Define both Light and Dark  ***************************************
+
+// .ng-material-light-theme{
+    @include mat.all-component-themes($ng-material-light-theme);
+    // @include custom-component-theme($ng-material-light-theme);
+// }
+// .ng-material-dark-theme{
+//     @include mat.all-component-themes($ng-material-dark-theme);
+//     @include custom-component-theme($ng-material-dark-theme);
+// }
+
+

@@ -1,0 +1,40 @@
+@use "@angular/material" as mat;
+@import "./ng-material-colors";
+
+//define palette
+$ng-material-light-theme-primary: mat.define-palette($ng-material-theme-primary);
+$ng-material-light-theme-accent: mat.define-palette($ng-material-theme-accent);
+$ng-material-light-theme-warn: mat.define-palette($ng-material-theme-warn);
+
+$ng-material-light-theme: mat.define-light-theme((
+    color: (
+        primary: $ng-material-light-theme-primary,
+        accent: $ng-material-light-theme-accent,
+        warn: $ng-material-light-theme-warn
+    )
+));
+
+// or like this
+
+// $wolken-light-theme: mat.define-light-theme(
+//     $ng-material-light-theme-primary,
+//     $ng-material-light-theme-accent,
+//     $ng-material-light-theme-warn
+// );
+
+$light-foreground: map-get($ng-material-light-theme, foreground);
+// $light-background: map-get($ng-material-light-theme, background);
+
+.light-primary{
+    color: mat.get-color-from-palette($ng-material-light-theme-primary);
+}
+.light-accent{
+    color: mat.get-color-from-palette($ng-material-light-theme-accent);
+}
+.light-warn{
+    color: mat.get-color-from-palette($ng-material-light-theme-warn);
+}
+
+.light-bg{
+    background-color:  mat.get-color-from-palette($light-foreground, text);
+}
