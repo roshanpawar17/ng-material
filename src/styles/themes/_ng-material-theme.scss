@@ -28,7 +28,7 @@
 
 // .ng-material-light-theme{
     @include mat.all-component-themes($ng-material-light-theme);
-    // @include custom-component-theme($ng-material-light-theme);
+    @include custom-component-theme($ng-material-light-theme);
 // }
 // .ng-material-dark-theme{
 //     @include mat.all-component-themes($ng-material-dark-theme);

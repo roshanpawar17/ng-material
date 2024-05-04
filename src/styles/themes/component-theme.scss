@@ -1,0 +1,5 @@
+@import "../../app/ng-components/buttons-toggle/buttons-toggle.component.scss";
+
+@mixin custom-component-theme($theme){
+    @include button-toggle-theme($theme);
+}

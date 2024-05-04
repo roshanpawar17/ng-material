@@ -1,16 +1,16 @@
-<h2>Ex-1 - Single button toggle - with template reference variable</h2>
+<h2 class="light-primary light-bg">Ex-1 - Single button toggle - with template reference variable</h2>
 <mat-button-toggle #singleToggleBtn1>{{singleToggleBtn1.checked ? "Active": "Unactive"}}</mat-button-toggle>
 <p>{{singleToggleBtn1.checked}}</p>
 
 <br>
 
-<h2>Ex-1 - Single button toggle - with click event</h2>
+<h2 class="heading">Ex-1 - Single button toggle - with click event</h2>
 <mat-button-toggle #singleToggleBtn2 (click)="onToggle(singleToggleBtn2)">{{singleToggleBtn2.checked ? "Active": "Unactive"}}</mat-button-toggle>
 <p>{{isToggle}}</p>
 
 <br>
 
-<h2>Ex-2 - Single selection</h2>
+<h2 class="heading-2">Ex-2 - Single selection</h2>
 <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
   <mat-button-toggle value="red">Red</mat-button-toggle>
   <mat-button-toggle value="green">Green</mat-button-toggle>

@@ -1,3 +1,22 @@
+@import "@angular/material/theming";
+
+@mixin button-toggle-theme($theme){
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+    $warn: map-get($theme, warn);
+    $forground: map-get($theme, foreground);
+    $background: map-get($theme, background);
+    
+    .heading{
+        color: mat-color($primary, 500);
+    }
+
+    .heading-2{
+        color: mat-color($background, card);
+        background-color: mat-color($forground, text);
+    }
+}
+
 :host ::ng-deep .mat-button-toggle-checked{
     color: white;
     background-color: purple;
