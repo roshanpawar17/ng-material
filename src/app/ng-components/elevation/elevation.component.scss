@@ -1,0 +1,28 @@
+@use "@angular/material" as mat;
+
+.card{
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+}
+
+// mat elevation as a mixin default
+.card2{
+    @include mat.elevation(17)
+}
+
+// mat elevation as a override defile elevation level, color, opacity
+.card3{
+    @include mat.elevation(24, gray, 0.301);
+}
+
+// mat elevation as a animation-transition
+.card4{
+    @include mat.elevation-transition();
+    @include mat.elevation(5);
+
+    &:hover{
+        @include mat.elevation(20);
+    }
+}
+

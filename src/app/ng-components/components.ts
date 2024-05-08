@@ -8,6 +8,10 @@ export const components = [
         link: 'button-toggle'
     },
     {
+        name: 'Elevation',
+        link: 'elevation'
+    },
+    {
         name: 'Ripple',
         link: 'ripple'
     },
@@ -18,7 +22,11 @@ export const components = [
     {
         name: 'Icons',
         link: 'icons'
-    }
+    },
+    {
+        name: 'Icons',
+        link: 'icoZns'
+    },
 ]
 
 

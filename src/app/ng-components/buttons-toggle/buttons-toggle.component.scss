@@ -12,8 +12,10 @@
     }
 
     .heading-2{
-        color: mat-color($background, card);
-        background-color: mat-color($forground, text);
+        color: mat-color($accent, 500);
+        background-color: mat-color($background, app-bar);
+        border: 1px solid mat-color($forground, divider);
+        padding: 5px;
     }
 }
 

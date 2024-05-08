@@ -3,6 +3,8 @@ import { RouterModule, Routes } from "@angular/router";
 import { NgComponentsComponent } from "./ng-components.component";
 import { ButtonsIconsComponent } from "./buttons-icons/buttons-icons.component";
 import { ButtonsToggleComponent } from "./buttons-toggle/buttons-toggle.component";
+import { ElevationComponent } from "./elevation/elevation.component";
+import { RippleComponent } from "./ripple/ripple.component";
 
 const routes: Routes = [
   {
@@ -16,7 +18,15 @@ const routes: Routes = [
   {
     path: 'button-toggle',
     component: ButtonsToggleComponent
-  }
+  },
+  {
+    path: 'elevation',
+    component: ElevationComponent
+  },
+  {
+    path: 'ripple',
+    component: RippleComponent
+  },
 ]
 
 @NgModule({

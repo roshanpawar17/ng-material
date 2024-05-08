@@ -7,12 +7,16 @@ import { ButtonsIconsComponent } from './buttons-icons/buttons-icons.component';
 import { ButtonsToggleComponent } from './buttons-toggle/buttons-toggle.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ElevationComponent } from './elevation/elevation.component';
+import { RippleComponent } from './ripple/ripple.component';
 
 @NgModule({
   declarations: [
     NgComponentsComponent,
     ButtonsIconsComponent,
-    ButtonsToggleComponent
+    ButtonsToggleComponent,
+    ElevationComponent,
+    RippleComponent
   ],
   imports: [
     CommonModule,
