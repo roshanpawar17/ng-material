@@ -3,33 +3,40 @@
     <mat-card-content>Simple card Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur consequatur nesciunt nulla culpa facere quas quibusdam incidunt laborum in maxime.
     </mat-card-content>
 </mat-card>
-
+<br><br>
 <mat-card matRipple [matRippleColor]="'red'" class="mt-15">
     <p>matRippleColor = red</p>
     <mat-card-content>Simple card Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, repellat quaerat? Delectus ex necessitatibus impedit autem optio esse nemo quo!
     </mat-card-content>
 </mat-card>
-
+<br><br>
 <mat-card matRipple [matRippleRadius]="20" class="mt-15">
     <p>matRippleRadius 20</p>
     <mat-card-content>Simple card Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae perspiciatis nesciunt voluptatibus sapiente cupiditate, ratione dolores sequi nihil veritatis doloribus. </mat-card-content>
 </mat-card>
-
+<br><br>
 <mat-card matRipple [matRippleCentered]="true" class="mt-15">
     <p>matRippleCentered</p>
     <mat-card-content>Simple card Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae perspiciatis nesciunt voluptatibus sapiente cupiditate, ratione dolores sequi nihil veritatis doloribus. </mat-card-content>
 </mat-card>
-
+<br><br>
 <mat-card matRipple [matRippleDisabled]="true" class="mt-15">
     <p>matRippleDisabled = true</p>
     <mat-card-content>Simple card Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae perspiciatis nesciunt voluptatibus sapiente cupiditate, ratione dolores sequi nihil veritatis doloribus. </mat-card-content>
 </mat-card>
-
+<br><br>
 <mat-card matRipple [matRippleTrigger]="trigger" class="mt-15">
     <p>matRippleTrigger on button but matRippleTrigger refeence on button parent div</p>
     <mat-card-content>Simple card Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae perspiciatis nesciunt voluptatibus sapiente cupiditate, ratione dolores sequi nihil veritatis doloribus. </mat-card-content>
 </mat-card>
-  
+<br><br>
 <div #trigger>
     <button mat-button mat-raised-button color="accent" >Ripple Trigger</button>
 </div>
+<br><br>
+<!-- manual ripple -->
+<mat-card matRipple #manualRipple class="mt-15" >
+    <p>matRippleTrigger on button but matRippleTrigger refeence on button parent div</p>
+    <mat-card-content>Simple card Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae perspiciatis nesciunt voluptatibus sapiente cupiditate, ratione dolores sequi nihil veritatis doloribus. </mat-card-content>
+</mat-card>
+
