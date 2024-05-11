@@ -5,6 +5,7 @@ import { ButtonsIconsComponent } from "./buttons-icons/buttons-icons.component";
 import { ButtonsToggleComponent } from "./buttons-toggle/buttons-toggle.component";
 import { ElevationComponent } from "./elevation/elevation.component";
 import { RippleComponent } from "./ripple/ripple.component";
+import { MenuComponent } from "./menu/menu.component";
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'ripple',
     component: RippleComponent
+  },
+  {
+    path: 'menu',
+    component: MenuComponent
   },
 ]
 

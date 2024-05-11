@@ -9,6 +9,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatRippleModule} from '@angular/material/core';
+import {MatMenuModule} from '@angular/material/menu';
 
 const MaterialModules = [
   MatButtonModule,
@@ -17,7 +18,8 @@ const MaterialModules = [
   MatDividerModule,
   MatCardModule,
   MatButtonToggleModule,
-  MatRippleModule
+  MatRippleModule,
+  MatMenuModule
 ]
 
 @NgModule({

@@ -9,6 +9,16 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ElevationComponent } from './elevation/elevation.component';
 import { RippleComponent } from './ripple/ripple.component';
+import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from '@angular/material/core';
+import { MenuComponent } from './menu/menu.component';
+
+const globalRippleConfig: RippleGlobalOptions = {
+  disabled: false,
+  animation: {
+    enterDuration: 300,
+    exitDuration: 0
+  }
+};
 
 @NgModule({
   declarations: [
@@ -16,7 +26,8 @@ import { RippleComponent } from './ripple/ripple.component';
     ButtonsIconsComponent,
     ButtonsToggleComponent,
     ElevationComponent,
-    RippleComponent
+    RippleComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,
@@ -24,6 +35,12 @@ import { RippleComponent } from './ripple/ripple.component';
     SharedModule,
     FormsModule,
     ReactiveFormsModule
+  ],
+  providers: [
+    {
+      provide: MAT_RIPPLE_GLOBAL_OPTIONS,
+      useValue: globalRippleConfig
+    }
   ]
 })
 export class NgComponentsModule {

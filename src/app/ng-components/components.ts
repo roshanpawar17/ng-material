@@ -16,12 +16,16 @@ export const components = [
         link: 'ripple'
     },
     {
-        name: 'Cards',
-        link: 'cards'
+        name: 'Menu',
+        link: 'menu'
     },
     {
         name: 'Icons',
         link: 'icons'
+    },
+    {
+        name: 'Icons',
+        link: 'icoZns'
     },
     {
         name: 'Icons',
