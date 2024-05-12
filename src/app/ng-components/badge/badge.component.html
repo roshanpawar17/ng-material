@@ -1,0 +1,20 @@
+<div matBadge="4" matBadgeOverlap="false" class="demo-section">Text with a badge</div>
+<br><br>
+<div matBadge="1" matBadgeSize="large" class="demo-section">Text with large badge</div>
+<br><br>
+<button mat-raised-button color="primary"
+      matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+    Action
+</button>
+<br><br>
+<mat-icon [matBadge]="count" matBadgeColor="warn" [matBadgeHidden]="count === 0">home</mat-icon>
+<br><br>
+<div>
+    <button mat-raised-button (click)="incrementCount()">
+        Increment
+    </button>
+    <p>{{count}}</p>
+    <button mat-raised-button (click)="decrementCount()">
+        Decrement
+    </button>
+</div>

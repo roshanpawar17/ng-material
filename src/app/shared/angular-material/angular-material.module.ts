@@ -10,6 +10,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatRippleModule} from '@angular/material/core';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 const MaterialModules = [
   MatButtonModule,
@@ -19,7 +23,11 @@ const MaterialModules = [
   MatCardModule,
   MatButtonToggleModule,
   MatRippleModule,
-  MatMenuModule
+  MatMenuModule,
+  MatBadgeModule,
+  MatDialogModule,
+  MatFormFieldModule,
+  MatInputModule,
 ]
 
 @NgModule({

@@ -6,6 +6,8 @@ import { ButtonsToggleComponent } from "./buttons-toggle/buttons-toggle.componen
 import { ElevationComponent } from "./elevation/elevation.component";
 import { RippleComponent } from "./ripple/ripple.component";
 import { MenuComponent } from "./menu/menu.component";
+import { BadgeComponent } from "./badge/badge.component";
+import { OpenDialogComponent } from "./open-dialog/open-dialog.component";
 
 const routes: Routes = [
   {
@@ -31,6 +33,14 @@ const routes: Routes = [
   {
     path: 'menu',
     component: MenuComponent
+  },
+  {
+    path: 'badge',
+    component: BadgeComponent
+  },
+  {
+    path: 'dialogs',
+    component: OpenDialogComponent
   },
 ]
 

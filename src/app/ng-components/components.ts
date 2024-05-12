@@ -20,12 +20,12 @@ export const components = [
         link: 'menu'
     },
     {
-        name: 'Icons',
-        link: 'icons'
+        name: 'Badge',
+        link: 'badge'
     },
     {
-        name: 'Icons',
-        link: 'icoZns'
+        name: 'Dialogs',
+        link: 'dialogs'
     },
     {
         name: 'Icons',

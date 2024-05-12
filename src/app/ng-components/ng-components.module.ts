@@ -11,6 +11,8 @@ import { ElevationComponent } from './elevation/elevation.component';
 import { RippleComponent } from './ripple/ripple.component';
 import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from '@angular/material/core';
 import { MenuComponent } from './menu/menu.component';
+import { BadgeComponent } from './badge/badge.component';
+import { OpenDialogComponent } from './open-dialog/open-dialog.component';
 
 const globalRippleConfig: RippleGlobalOptions = {
   disabled: false,
@@ -27,7 +29,9 @@ const globalRippleConfig: RippleGlobalOptions = {
     ButtonsToggleComponent,
     ElevationComponent,
     RippleComponent,
-    MenuComponent
+    MenuComponent,
+    BadgeComponent,
+    OpenDialogComponent
   ],
   imports: [
     CommonModule,
